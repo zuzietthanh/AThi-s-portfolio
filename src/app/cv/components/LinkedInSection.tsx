@@ -96,7 +96,7 @@ export default function LinkedInSection() {
                 <div className="w-3 h-3 rounded-full bg-green-400" aria-hidden="true" />
               </div>
               <div className="flex-1 bg-background rounded px-3 py-1.5 text-xs text-muted-foreground font-mono">
-                linkedin.com/in/vu-dang-anh-thi-marketing
+                linkedin.com/in/thivudanganh
               </div>
             </div>
 
@@ -119,7 +119,7 @@ export default function LinkedInSection() {
                   <div className="flex items-end gap-4">
                     <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-card overflow-hidden flex-shrink-0 bg-secondary">
                       <AppImage
-                        src="https://img.rocket.new/generatedImages/rocket_gen_img_193180e7a-1763297576058.png"
+                        src="/assets/images/profile-headshot.png"
                         alt="Vu Dang Anh Thi professional headshot, clean background, warm natural light"
                         width={96}
                         height={96}
@@ -136,7 +136,7 @@ export default function LinkedInSection() {
                     </div>
                   </div>
                   <a
-                    href="https://linkedin.com/in/vu-dang-anh-thi-marketing"
+                    href="https://linkedin.com/in/thivudanganh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary text-xs px-5 py-2.5 flex-shrink-0"

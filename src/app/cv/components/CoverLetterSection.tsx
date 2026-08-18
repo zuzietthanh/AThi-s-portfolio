@@ -130,7 +130,7 @@ export default function CoverLetterSection() {
               <div className="mb-8">
                 <p className="text-sm font-semibold text-foreground">Vu Dang Anh Thi</p>
                 <p className="text-xs text-muted-foreground">
-                  Ho Chi Minh City, Vietnam · vudanganhthi@university.edu
+                  Ho Chi Minh City, Vietnam · thivudanganh@gmail.com
                 </p>
                 <p className="text-xs text-muted-foreground mt-1">April 15, 2026</p>
               </div>

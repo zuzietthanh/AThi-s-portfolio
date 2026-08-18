@@ -57,7 +57,7 @@ export default function ContactSection() {
           {/* Right: Contact details */}
           <div className="space-y-6 scroll-reveal">
             <a
-              href="mailto:vudanganhthi@university.edu"
+              href="mailto:thivudanganh@gmail.com"
               className="flex items-center gap-4 group border border-primary-foreground/10 rounded-xl px-6 py-5 hover:border-accent transition-colors duration-300 min-h-[44px]"
               aria-label="Send email to Vu Dang Anh Thi"
             >
@@ -83,13 +83,13 @@ export default function ContactSection() {
                   Email
                 </p>
                 <p className="text-sm font-medium text-primary-foreground group-hover:text-accent transition-colors">
-                  vudanganhthi@university.edu
+                  thivudanganh@gmail.com
                 </p>
               </div>
             </a>
 
             <a
-              href="https://linkedin.com/in/vu-dang-anh-thi-marketing"
+              href="https://linkedin.com/in/thivudanganh"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 group border border-primary-foreground/10 rounded-xl px-6 py-5 hover:border-accent transition-colors duration-300 min-h-[44px]"
@@ -112,13 +112,13 @@ export default function ContactSection() {
                   LinkedIn
                 </p>
                 <p className="text-sm font-medium text-primary-foreground group-hover:text-accent transition-colors">
-                  linkedin.com/in/vu-dang-anh-thi-marketing
+                  linkedin.com/in/thivudanganh
                 </p>
               </div>
             </a>
 
             <a
-              href="mailto:vudanganhthi@university.edu"
+              href="mailto:thivudanganh@gmail.com"
               className="btn-primary w-full justify-center mt-4 py-4"
               aria-label="Send a message to Vu Dang Anh Thi"
             >
