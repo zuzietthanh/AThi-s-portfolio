@@ -132,6 +132,7 @@ export default function CVDocument() {
                 type="application/pdf"
                 aria-label="Vu Dang Anh Thi Curriculum Vitae PDF"
                 className="w-full h-full"
+                style={{ colorScheme: 'light' }}
               >
                 <div className="w-full h-full flex flex-col items-center justify-center gap-4 px-6 text-center">
                   <p className="text-sm text-muted-foreground">
