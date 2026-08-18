@@ -116,14 +116,29 @@ export default function CVDocument() {
               </a>
             </div>
 
-            {/* PDF Viewer via Google Docs */}
+            {/* PDF Viewer — direct embed of the local file. Browsers that
+                cannot render PDFs inline (notably mobile Safari) show the
+                fallback link inside the <object> instead. */}
             <div className="w-full" style={{ height: '1000px' }}>
-              <iframe
-                src={`https://docs.google.com/viewer?url=${encodeURIComponent('https://marketingp4838.builtwithrocket.new/assets/images/Vu_Dang_Anh_Thi_CV.pdf')}&embedded=true`}
-                title="Vu Dang Anh Thi CV"
-                className="w-full h-full border-0"
+              <object
+                data="/assets/images/Vu_Dang_Anh_Thi_CV.pdf"
+                type="application/pdf"
                 aria-label="Vu Dang Anh Thi Curriculum Vitae PDF"
-              />
+                className="w-full h-full"
+              >
+                <div className="w-full h-full flex flex-col items-center justify-center gap-4 px-6 text-center">
+                  <p className="text-sm text-muted-foreground">
+                    Your browser cannot display PDFs inline.
+                  </p>
+                  <a
+                    href="/assets/images/Vu_Dang_Anh_Thi_CV.pdf"
+                    className="btn-primary"
+                    aria-label="Download Vu Dang Anh Thi CV as PDF"
+                  >
+                    Download the CV
+                  </a>
+                </div>
+              </object>
             </div>
           </div>
         </div>
