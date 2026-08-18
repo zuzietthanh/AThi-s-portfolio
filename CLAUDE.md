@@ -37,53 +37,56 @@ Page-specific sections live in `components/` folders beside each page.
 clean, all 8 static pages generate, and `/`, `/cv`, `/statement-of-purpose`
 render correctly. No code changes were needed.
 
-## Known gaps — read before you start
+## Current state
 
-1. **`package-lock.json` is absent.** It was excluded from the export.
-   `npm install` regenerates it. Dependency *versions* in `package.json`
-   are exact, so this is safe.
+Rocket is fully removed. `grep -ri rocket src/ next.config.mjs
+image-hosts.config.mjs package.json` returns nothing.
 
-2. **`.env` holds Rocket's placeholder keys only** (Supabase, OpenAI,
-   Gemini, Anthropic, Stripe, GA, AdSense, Perplexity). Nothing here is
-   wired up by the site as it stands. Real values are not present, and
-   `.env` is gitignored — keep it that way.
+1. **`package-lock.json` is absent** and gitignored. `npm install`
+   regenerates it. Dependency *versions* in `package.json` are exact.
+   Consider committing the lockfile for reproducible builds.
 
-3. **The CV PDF viewer will not render locally.** `CVDocument.tsx` embeds
-   the PDF through the Google Docs viewer:
+2. **`.env` is gitignored** (it was NOT, originally — it was tracked, and
+   it still contains a real-looking `ANTHROPIC_API_KEY` that should be
+   revoked). Nothing in `.env` is wired up by the site except
+   `NEXT_PUBLIC_SITE_URL`.
 
-   ```
-   https://docs.google.com/viewer?url=<public-url>&embedded=true
-   ```
+3. **Error suppression is off.** `next.config.mjs` no longer sets
+   `typescript.ignoreBuildErrors` or `eslint.ignoreDuringBuilds`, so
+   `npm run build` type-checks and lints for real. It passes. Six
+   non-blocking ESLint warnings remain (4 `no-explicit-any`, 2
+   `alt-text` false positives in `AppImage`).
 
-   Google has to fetch that URL, so it fails on `localhost` and on any
-   private deployment. This is the bug that was never solved inside
-   Rocket. The fix is to embed the local file directly instead:
+4. **The CV PDF renders locally.** `CVDocument.tsx` embeds
+   `/assets/images/Vu_Dang_Anh_Thi_CV.pdf` with `<object>` and a download
+   fallback. The old Google Docs Viewer iframe needed Google to fetch a
+   public URL, which is why it was always blank on localhost.
+   Not verified on mobile Safari — see "Known risk" below.
 
-   ```tsx
-   <object data="/assets/images/Vu_Dang_Anh_Thi_CV.pdf"
-           type="application/pdf"
-           className="w-full h-full">
-     <a href="/assets/images/Vu_Dang_Anh_Thi_CV.pdf">Download the CV</a>
-   </object>
-   ```
+5. **Deployment.** `sitemap.ts`, `robots.ts` and `metadata.metadataBase`
+   all read `NEXT_PUBLIC_SITE_URL`, falling back to `localhost:3000`.
+   Set that variable in your host's environment once you have a domain —
+   no code change needed.
 
-   The real CV PDF (475 KB, 1 page) is already in place at
-   `public/assets/images/Vu_Dang_Anh_Thi_CV.pdf`. Rocket had deployed a
-   62-byte text placeholder there, which is the actual reason the preview
-   showed nothing.
+## Known risk
 
-4. **Deployment target.** `src/app/sitemap.ts` and `robots.ts` reference the
-   old Rocket host `marketingp4838.builtwithrocket.new`. Update these plus
-   `NEXT_PUBLIC_SITE_URL` in `.env` when you deploy elsewhere.
+`<object>` PDF embedding is unreliable on **mobile Safari**: it often
+renders a blank box *without* triggering the `<object>` fallback. Test
+`/cv` on a real iPhone. If it is blank, the fix is to detect iOS and
+render the download link (or a page-one PNG) instead of the `<object>`.
 
 ## Assets
 
 - `public/assets/images/image-1787068988743.png` — graduation hero photo
 - `public/assets/images/app_logo.png` — site logo
 - `public/assets/images/no_image.png` — image fallback used by `ui/AppImage.tsx`
+- `public/assets/images/doc-statement-of-purpose.png`, `doc-curriculum-vitae.png`,
+  `doc-cover-letter.png` — homepage document cards (were on Rocket's CDN)
+- `public/assets/images/profile-headshot.png` — LinkedIn card avatar
+  (AI-generated stock image, not a real photo)
 - `public/assets/images/Vu_Dang_Anh_Thi_CV.pdf` — the CV
 - `public/favicon.ico`
 
-Remote images are allowlisted in `image-hosts.config.mjs` (unsplash, pexels,
-pixabay, img.rocket.new). Drop `img.rocket.new` once you confirm nothing
-still points at it.
+All images are served locally from `public/assets/images/`. Remote hosts
+allowlisted in `image-hosts.config.mjs` (unsplash, pexels, pixabay) are
+not currently used by any component.
