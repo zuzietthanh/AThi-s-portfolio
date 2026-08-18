@@ -26,7 +26,9 @@ export default function Header() {
     } else {
       document.body.style.overflow = '';
     }
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [menuOpen]);
 
   return (
@@ -39,10 +41,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <AppLogo
-              size={32}
-              onClick={undefined}
-            />
+            <AppLogo size={32} onClick={undefined} />
             <span className="font-display font-light text-lg tracking-wide text-foreground">
               Vu Dang Anh Thi
             </span>
@@ -59,10 +58,7 @@ export default function Header() {
                 {link?.label}
               </Link>
             ))}
-            <Link
-              href="/#contact"
-              className="btn-primary text-xs px-6 py-3"
-            >
+            <Link href="/#contact" className="btn-primary text-xs px-6 py-3">
               Contact
             </Link>
           </nav>
@@ -106,11 +102,7 @@ export default function Header() {
             {link?.label}
           </Link>
         ))}
-        <Link
-          href="/#contact"
-          onClick={() => setMenuOpen(false)}
-          className="btn-primary mt-4"
-        >
+        <Link href="/#contact" onClick={() => setMenuOpen(false)} className="btn-primary mt-4">
           Contact
         </Link>
       </div>

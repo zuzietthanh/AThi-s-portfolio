@@ -39,13 +39,28 @@ export default function PeerFeedback({ feedbackItems, documentTitle }: PeerFeedb
     <div ref={ref} className="scroll-reveal bg-card border border-border rounded-2xl p-6 md:p-8">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-8 h-8 rounded-full bg-primary/5 border border-border flex items-center justify-center flex-shrink-0">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-foreground" aria-hidden="true">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-foreground"
+            aria-hidden="true"
+          >
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
         </div>
         <div>
-          <p className="text-xs font-bold uppercase tracking-wide-xl text-muted-foreground">Peer Feedback</p>
-          <h3 className="font-display text-lg font-medium text-foreground">{documentTitle} Feedback Documentation</h3>
+          <p className="text-xs font-bold uppercase tracking-wide-xl text-muted-foreground">
+            Peer Feedback
+          </p>
+          <h3 className="font-display text-lg font-medium text-foreground">
+            {documentTitle} Feedback Documentation
+          </h3>
         </div>
       </div>
 
@@ -67,7 +82,7 @@ export default function PeerFeedback({ feedbackItems, documentTitle }: PeerFeedb
               </div>
             </div>
             <blockquote className="text-sm text-muted-foreground leading-relaxed italic">
-              "{item.feedback}"
+              &quot;{item.feedback}&quot;
             </blockquote>
           </div>
         ))}

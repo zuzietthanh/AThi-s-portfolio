@@ -26,7 +26,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'MarketingPortfolio — Vu Dang Anh Thi',
-  description: 'Professional marketing portfolio by Vu Dang Anh Thi, a university student specializing in brand strategy, digital marketing, and integrated communications.',
+  description:
+    'Professional marketing portfolio by Vu Dang Anh Thi, a university student specializing in brand strategy, digital marketing, and integrated communications.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },
@@ -37,14 +38,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${dmSans.variable} ${fraunces.variable}`}>
-      <body className={dmSans.className}>
-        {children}
-      </body>
+      <body className={dmSans.className}>{children}</body>
     </html>
   );
 }

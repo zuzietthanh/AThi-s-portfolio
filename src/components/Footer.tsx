@@ -15,25 +15,38 @@ export default function Footer() {
         </Link>
 
         {/* Links */}
-        <nav className="flex flex-wrap justify-center gap-6 md:gap-8" aria-label="Footer navigation">
-          <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center">
+        <nav
+          className="flex flex-wrap justify-center gap-6 md:gap-8"
+          aria-label="Footer navigation"
+        >
+          <Link
+            href="/"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center"
+          >
             Home
           </Link>
-          <Link href="/statement-of-purpose" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center">
+          <Link
+            href="/statement-of-purpose"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center"
+          >
             Statement of Purpose
           </Link>
-          <Link href="/cv" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center">
+          <Link
+            href="/cv"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center"
+          >
             CV
           </Link>
-          <Link href="/#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center">
+          <Link
+            href="/#contact"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 min-h-[44px] flex items-center"
+          >
             Contact
           </Link>
         </nav>
 
         {/* Copyright */}
-        <p className="text-xs text-muted-foreground tracking-wide">
-          © 2026 Vu Dang Anh Thi
-        </p>
+        <p className="text-xs text-muted-foreground tracking-wide">© 2026 Vu Dang Anh Thi</p>
       </div>
     </footer>
   );

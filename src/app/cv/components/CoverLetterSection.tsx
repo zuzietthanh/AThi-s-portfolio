@@ -22,7 +22,7 @@ const clRevisionNarrative = {
     {
       stage: 'Final Version',
       description:
-        'Tightened to 320 words. Opening hook references company\'s recent sustainability campaign. Middle paragraph leads with the Instagram engagement metric from my internship. Closing is confident and specific about the role.',
+        "Tightened to 320 words. Opening hook references company's recent sustainability campaign. Middle paragraph leads with the Instagram engagement metric from my internship. Closing is confident and specific about the role.",
     },
   ],
 };
@@ -78,12 +78,14 @@ export default function CoverLetterSection() {
           <div>
             <span className="section-label block mb-3">Artifact 03</span>
             <h2 id="cl-heading" className="font-display text-section-xl font-light text-foreground">
-              Cover<br />
+              Cover
+              <br />
               <span className="italic">Letter</span>
             </h2>
           </div>
           <p className="max-w-xs text-sm text-muted-foreground leading-relaxed md:pb-2">
-            Custom cover letter for a digital marketing coordinator position, demonstrating targeted research and brand awareness.
+            Custom cover letter for a digital marketing coordinator position, demonstrating targeted
+            research and brand awareness.
           </p>
         </div>
 
@@ -104,7 +106,17 @@ export default function CoverLetterSection() {
                 className="text-xs font-bold uppercase tracking-wide text-accent hover:text-foreground transition-colors min-h-[44px] flex items-center gap-1.5"
                 aria-label="Download cover letter"
               >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />
@@ -117,7 +129,9 @@ export default function CoverLetterSection() {
             <div className="p-8 md:p-12 lg:p-16 max-w-3xl mx-auto">
               <div className="mb-8">
                 <p className="text-sm font-semibold text-foreground">Vu Dang Anh Thi</p>
-                <p className="text-xs text-muted-foreground">Ho Chi Minh City, Vietnam · vudanganhthi@university.edu</p>
+                <p className="text-xs text-muted-foreground">
+                  Ho Chi Minh City, Vietnam · vudanganhthi@university.edu
+                </p>
                 <p className="text-xs text-muted-foreground mt-1">April 15, 2026</p>
               </div>
 
@@ -132,24 +146,44 @@ export default function CoverLetterSection() {
                 <p>Dear Hiring Manager,</p>
 
                 <p>
-                  Your recent "Roots & Routes" sustainability campaign stopped me mid-scroll — not because of the visuals alone, but because of how precisely it spoke to a 24-year-old who cares about both aesthetics and accountability. That campaign is exactly the kind of work I want to contribute to, which is why I am writing to apply for the Digital Marketing Coordinator position at Meridian Brands.
+                  Your recent &quot;Roots & Routes&quot; sustainability campaign stopped me
+                  mid-scroll — not because of the visuals alone, but because of how precisely it
+                  spoke to a 24-year-old who cares about both aesthetics and accountability. That
+                  campaign is exactly the kind of work I want to contribute to, which is why I am
+                  writing to apply for the Digital Marketing Coordinator position at Meridian
+                  Brands.
                 </p>
 
                 <p>
-                  As a marketing student with hands-on internship experience, I have developed a practical understanding of what moves numbers and what moves people. During my summer at Bloom Creative Agency, I grew a client's Instagram engagement rate by 34% over eight weeks through a content strategy grounded in audience data rather than guesswork. I learned that the most effective content is not the most polished — it is the most relevant. That insight shapes how I approach every brief.
+                  As a marketing student with hands-on internship experience, I have developed a
+                  practical understanding of what moves numbers and what moves people. During my
+                  summer at Bloom Creative Agency, I grew a client&apos;s Instagram engagement rate
+                  by 34% over eight weeks through a content strategy grounded in audience data
+                  rather than guesswork. I learned that the most effective content is not the most
+                  polished — it is the most relevant. That insight shapes how I approach every
+                  brief.
                 </p>
 
                 <p>
-                  I bring proficiency in Google Analytics, Meta Business Suite, and HubSpot, alongside a genuine enthusiasm for the intersection of data and storytelling that defines modern marketing. I am also a fast learner who thrives in collaborative environments — at the Student Union, I coordinated with a five-person team to launch campaigns that drove a 15% increase in event attendance.
+                  I bring proficiency in Google Analytics, Meta Business Suite, and HubSpot,
+                  alongside a genuine enthusiasm for the intersection of data and storytelling that
+                  defines modern marketing. I am also a fast learner who thrives in collaborative
+                  environments — at the Student Union, I coordinated with a five-person team to
+                  launch campaigns that drove a 15% increase in event attendance.
                 </p>
 
                 <p>
-                  I would welcome the opportunity to discuss how my background and enthusiasm for Meridian's brand vision could contribute to your team. I am available for a conversation at your convenience.
+                  I would welcome the opportunity to discuss how my background and enthusiasm for
+                  Meridian&apos;s brand vision could contribute to your team. I am available for a
+                  conversation at your convenience.
                 </p>
 
                 <p className="mt-6">
-                  Sincerely,<br />
-                  <span className="font-display font-medium italic text-base text-foreground">Vu Dang Anh Thi</span>
+                  Sincerely,
+                  <br />
+                  <span className="font-display font-medium italic text-base text-foreground">
+                    Vu Dang Anh Thi
+                  </span>
                 </p>
               </div>
             </div>

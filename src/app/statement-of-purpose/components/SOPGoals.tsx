@@ -37,18 +37,16 @@ export default function SOPGoals() {
   }, []);
 
   return (
-    <section
-      ref={ref}
-      className="py-20 md:py-28"
-      aria-labelledby="goals-heading"
-      id="goals"
-    >
+    <section ref={ref} className="py-20 md:py-28" aria-labelledby="goals-heading" id="goals">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           {/* Label column */}
           <div className="lg:col-span-3 scroll-reveal">
             <span className="section-label block mb-4">Part A</span>
-            <h2 id="goals-heading" className="font-display text-3xl md:text-4xl font-light italic text-foreground">
+            <h2
+              id="goals-heading"
+              className="font-display text-3xl md:text-4xl font-light italic text-foreground"
+            >
               Professional &amp; Academic Goals
             </h2>
             <div className="divider-accent mt-6" />
@@ -73,7 +71,10 @@ export default function SOPGoals() {
                 <ul className="space-y-4" role="list">
                   {shortTermGoals?.map((goal, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" aria-hidden="true" />
+                      <span
+                        className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"
+                        aria-hidden="true"
+                      />
                       <p className="text-sm text-muted-foreground leading-relaxed">{goal}</p>
                     </li>
                   ))}
@@ -98,7 +99,10 @@ export default function SOPGoals() {
                 <ul className="space-y-4" role="list">
                   {longTermGoals?.map((goal, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-foreground/30 flex-shrink-0" aria-hidden="true" />
+                      <span
+                        className="mt-1.5 w-1.5 h-1.5 rounded-full bg-foreground/30 flex-shrink-0"
+                        aria-hidden="true"
+                      />
                       <p className="text-sm text-muted-foreground leading-relaxed">{goal}</p>
                     </li>
                   ))}
@@ -110,7 +114,9 @@ export default function SOPGoals() {
             <div className="md:col-span-2 scroll-reveal">
               <blockquote className="border-l-4 border-accent pl-6 py-2">
                 <p className="font-display text-xl md:text-2xl font-light italic text-foreground leading-relaxed">
-                  "Marketing, to me, is the art of making people feel understood. My goal is to build the skills that let me translate real human needs into campaigns that actually resonate — not just campaigns that look good on a brief."
+                  &quot;Marketing, to me, is the art of making people feel understood. My goal is to
+                  build the skills that let me translate real human needs into campaigns that
+                  actually resonate — not just campaigns that look good on a brief.&quot;
                 </p>
                 <footer className="mt-4 text-xs font-semibold uppercase tracking-super text-muted-foreground">
                   — Vu Dang Anh Thi, 2026

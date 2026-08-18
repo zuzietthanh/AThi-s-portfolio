@@ -67,24 +67,21 @@ export default function CVDocument() {
   }, []);
 
   return (
-    <section
-      ref={ref}
-      id="cv"
-      className="py-20 md:py-28"
-      aria-labelledby="cv-heading"
-    >
+    <section ref={ref} id="cv" className="py-20 md:py-28" aria-labelledby="cv-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         {/* Section heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 scroll-reveal">
           <div>
             <span className="section-label block mb-3">Artifact 02</span>
             <h2 id="cv-heading" className="font-display text-section-xl font-light text-foreground">
-              Curriculum<br />
+              Curriculum
+              <br />
               <span className="italic">Vitae</span>
             </h2>
           </div>
           <p className="max-w-xs text-sm text-muted-foreground leading-relaxed md:pb-2">
-            A clear, tailored CV for marketing roles — emphasizing leadership, community impact, and relevant skills.
+            A clear, tailored CV for marketing roles — emphasizing leadership, community impact, and
+            relevant skills.
           </p>
         </div>
 
@@ -107,7 +104,17 @@ export default function CVDocument() {
                 className="text-xs font-bold uppercase tracking-wide text-accent hover:text-foreground transition-colors min-h-[44px] flex items-center gap-1.5"
                 aria-label="Download CV"
               >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />

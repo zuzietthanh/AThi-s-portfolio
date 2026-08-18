@@ -55,14 +55,19 @@ export default function SOPFutureConnection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mb-14">
           <div className="lg:col-span-3 scroll-reveal">
             <span className="section-label block mb-4">Part C</span>
-            <h2 id="future-heading" className="font-display text-3xl md:text-4xl font-light italic text-foreground">
+            <h2
+              id="future-heading"
+              className="font-display text-3xl md:text-4xl font-light italic text-foreground"
+            >
               Future Connection
             </h2>
             <div className="divider-accent mt-6" />
           </div>
           <div className="lg:col-span-9 scroll-reveal flex items-end">
             <p className="text-base text-muted-foreground leading-relaxed max-w-2xl">
-              Each artifact in this portfolio is not just a document for today — it is a deliberate investment in the marketing career I am building. Here is how each piece connects to where I am headed.
+              Each artifact in this portfolio is not just a document for today — it is a deliberate
+              investment in the marketing career I am building. Here is how each piece connects to
+              where I am headed.
             </p>
           </div>
         </div>
@@ -76,7 +81,10 @@ export default function SOPFutureConnection() {
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {/* Decorative number */}
-              <div className="absolute top-4 right-6 font-display text-7xl font-light italic text-primary-foreground/[0.05] pointer-events-none select-none" aria-hidden="true">
+              <div
+                className="absolute top-4 right-6 font-display text-7xl font-light italic text-primary-foreground/[0.05] pointer-events-none select-none"
+                aria-hidden="true"
+              >
                 {String(i + 1)?.padStart(2, '0')}
               </div>
 
@@ -106,7 +114,17 @@ export default function SOPFutureConnection() {
           </div>
           <Link href="/cv" className="btn-primary flex-shrink-0">
             View CV &amp; Documents
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </Link>
