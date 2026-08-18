@@ -25,13 +25,13 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'MarketingPortfolio — Alexandra Chen',
-  description: 'Professional marketing portfolio by Alexandra Chen, a university student specializing in brand strategy, digital marketing, and integrated communications.',
+  title: 'MarketingPortfolio — Vu Dang Anh Thi',
+  description: 'Professional marketing portfolio by Vu Dang Anh Thi, a university student specializing in brand strategy, digital marketing, and integrated communications.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },
   openGraph: {
-    title: 'Alexandra Chen — Marketing Portfolio',
+    title: 'Vu Dang Anh Thi — Marketing Portfolio',
     description: 'Brand strategy & digital marketing student portfolio.',
     images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
   },

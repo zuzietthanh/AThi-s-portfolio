@@ -120,7 +120,7 @@ export default function LinkedInSection() {
                     <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-card overflow-hidden flex-shrink-0 bg-secondary">
                       <AppImage
                         src="https://img.rocket.new/generatedImages/rocket_gen_img_193180e7a-1763297576058.png"
-                        alt="Alexandra Chen professional headshot, clean background, warm natural light"
+                        alt="Vu Dang Anh Thi professional headshot, clean background, warm natural light"
                         width={96}
                         height={96}
                         className="object-cover object-top w-full h-full" />
