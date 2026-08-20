@@ -11,9 +11,8 @@ const documents = [
     description:
       'Professional goals, portfolio overview, and reflection on how these artifacts connect to my marketing career trajectory.',
     href: '/statement-of-purpose',
-    image: '/assets/images/doc-statement-of-purpose.png',
-    imageAlt:
-      'Open notebook with handwritten notes on bright white desk, clean minimal workspace, warm natural light',
+    image: '/assets/images/doc-statement-of-purpose.jpg',
+    imageAlt: 'Layered sheets of warm tan paper fanned out under soft directional light',
     tag: 'Reflection',
     offset: false,
   },
@@ -23,9 +22,9 @@ const documents = [
     description:
       'A clear, tailored CV highlighting marketing coursework, internship experience, campaign projects, and technical skills.',
     href: '/cv',
-    image: '/assets/images/doc-curriculum-vitae.png',
+    image: '/assets/images/doc-curriculum-vitae.jpg',
     imageAlt:
-      'Professional resume document on clean white background, organized layout, crisp typography, bright office setting',
+      'Overhead view of a bright white desk with a kraft-covered notebook and a closed laptop',
     tag: 'CV / Resume',
     offset: true,
   },
@@ -35,9 +34,8 @@ const documents = [
     description:
       'Custom cover letters for marketing positions, demonstrating targeted communication and understanding of brand voice.',
     href: '/cv#cover-letter',
-    image: '/assets/images/doc-cover-letter.png',
-    imageAlt:
-      'Person writing a professional letter at a bright clean desk, modern minimalist workspace, natural daylight',
+    image: '/assets/images/doc-cover-letter.jpg',
+    imageAlt: 'Office desk with angled task lamps, labelled document binders and camera equipment',
     tag: 'Cover Letter',
     offset: false,
   },
