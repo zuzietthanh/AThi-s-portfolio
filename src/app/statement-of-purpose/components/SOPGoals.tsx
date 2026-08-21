@@ -3,17 +3,17 @@
 import React, { useEffect, useRef } from 'react';
 
 const shortTermGoals = [
-  'Secure a marketing internship at a consumer brand or digital agency within the next 6 months',
-  'Develop hands-on experience with paid social media campaigns and analytics platforms',
-  'Build a professional network through LinkedIn and industry events',
-  'Complete Google Analytics and HubSpot certifications to strengthen my digital toolkit',
+  'Complete a marketing internship at a consumer brand or digital agency next summer',
+  'Apply classroom knowledge to real campaigns through audience research and content creation',
+  "Graduate from VinUniversity's Marketing program in 2026",
+  "Apply to a Master's program in China to continue developing my marketing training",
 ];
 
 const longTermGoals = [
-  'Grow into a Brand Manager role at a mid-to-large consumer goods company within 5 years',
-  'Lead integrated marketing campaigns that blend data-driven insights with compelling creative storytelling',
-  'Pursue an MBA with a concentration in marketing strategy to deepen strategic and leadership skills',
-  'Contribute to building brands that connect meaningfully with diverse audiences',
+  "Complete a Master's degree in China while raising my Mandarin proficiency to HSK 5 or higher",
+  'Open a Chinese language center in Vietnam — run as a business from day one, not just a classroom',
+  'Build a brand and content strategy that reaches families with children of study age and earns parent referrals',
+  "Serve as the center's first marketer, using the credibility built through study and hands-on experience",
 ];
 
 export default function SOPGoals() {
@@ -114,9 +114,10 @@ export default function SOPGoals() {
             <div className="md:col-span-2 scroll-reveal">
               <blockquote className="border-l-4 border-accent pl-6 py-2">
                 <p className="font-display text-xl md:text-2xl font-light italic text-foreground leading-relaxed">
-                  &quot;Marketing, to me, is the art of making people feel understood. My goal is to
-                  build the skills that let me translate real human needs into campaigns that
-                  actually resonate — not just campaigns that look good on a brief.&quot;
+                  &quot;The first real marketing decision I ever made was not for a client, but for
+                  a stage — before my 31-student team and I choreographed our performance for the
+                  &apos;Giai Dieu Tuoi Hong&apos; music contest, I ran a survey to find out which
+                  concept our audience actually wanted to see.&quot;
                 </p>
                 <footer className="mt-4 text-xs font-semibold uppercase tracking-super text-muted-foreground">
                   — Vu Dang Anh Thi, 2026

@@ -9,27 +9,18 @@ const documents = [
     title: 'Curriculum Vitae',
     href: '/cv',
     description:
-      'My CV was chosen as the foundation of this package because it is the primary tool recruiters use to evaluate candidates in under 30 seconds. I tailored it specifically for marketing roles, prioritizing campaign results, relevant coursework, and transferable skills over a generic chronological list. The CV demonstrates my ability to communicate concisely and strategically — a core marketing competency.',
+      'The CV outlines the skills I bring to a role. It is aimed at a hiring manager reviewing dozens of applications in a short window, so clarity matters as much as content. I led with a clear objective and quantified what I have actually done — a 200-member charity, over 500 Chung cakes prepared during the Central Vietnam floods, a 31-student performance team — so that impact is visible at a glance rather than buried in description.',
     whyIncluded:
-      'First point of contact for most employers; demonstrates professional history and key competencies.',
+      'The foundation of the package: it proves competence quickly to a reader who is scanning, not reading.',
   },
   {
     number: '02',
     title: 'Cover Letter',
     href: '/cv#cover-letter',
     description:
-      'The cover letter complements the CV by giving me a voice — it is where I can show personality, demonstrate knowledge of the company, and explain why I am the right fit for a specific role. I chose to include it because marketing is a field that prizes communication skills, and a strong cover letter is itself a writing sample. I customized the letter for a digital marketing coordinator position, showing targeted research and brand awareness.',
+      'The cover letter gives the CV a voice. Where the CV lists what I can do, the letter proves I have researched a specific organization and explains why I would be a strong fit there. It is written for one employer at a time rather than for a general audience, which is what makes it worth sending alongside a document that is otherwise identical for every application.',
     whyIncluded:
-      'Demonstrates written communication skills and brand-fit awareness — essential for marketing roles.',
-  },
-  {
-    number: '03',
-    title: 'LinkedIn Profile',
-    href: '/cv#linkedin',
-    description:
-      'LinkedIn is the professional network where marketing candidates are increasingly discovered and evaluated. My LinkedIn profile extends my personal brand beyond a PDF, allowing me to showcase endorsements, recommendations, and a richer narrative of my experience. Including it in this portfolio reflects an understanding that modern job seeking is multi-channel — employers will Google you, and your LinkedIn profile is often the first result.',
-    whyIncluded:
-      'Modern employers verify candidates on LinkedIn; a polished profile reinforces the CV narrative and expands reach.',
+      'Argues fit rather than competence, and is itself a writing sample for a field that prizes communication.',
   },
 ];
 
@@ -75,12 +66,11 @@ export default function SOPOverview() {
           </div>
           <div className="lg:col-span-9 scroll-reveal flex items-end">
             <p className="text-base text-muted-foreground leading-relaxed max-w-2xl">
-              I selected the{' '}
-              <strong className="text-foreground font-semibold">Job Seeking package</strong> because
-              my immediate priority is entering the marketing workforce upon graduation. The three
-              documents below represent the core toolkit any marketing candidate needs — a CV that
-              opens doors, a cover letter that builds connection, and a LinkedIn profile that
-              sustains visibility.
+              I chose the{' '}
+              <strong className="text-foreground font-semibold">Job Seeking package</strong> over
+              Exchange Study because an internship is my immediate next step, and these are the
+              documents I will actually use this year. Together they divide the work of an
+              application: the CV proves competence, and the cover letter argues fit.
             </p>
           </div>
         </div>

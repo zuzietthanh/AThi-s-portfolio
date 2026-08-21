@@ -6,21 +6,15 @@ import Link from 'next/link';
 const connections = [
   {
     artifact: 'CV',
-    futureRole: 'Marketing Coordinator / Brand Associate',
+    futureRole: 'Marketing Internship → Master’s in China',
     connection:
-      'The CV demonstrates the marketing coursework, internship experience, and analytical skills that entry-level marketing coordinators need. By tailoring it to highlight campaign metrics and cross-functional project work, I am positioning myself for roles that require both creative and data-driven thinking.',
+      'The CV is the document that has to carry me through the next two steps: an internship at a consumer brand or digital agency, and then an application to a Master’s program in China. Learning to quantify my experience rather than describe it is what makes the same document work for a recruiter and an admissions committee alike.',
   },
   {
     artifact: 'Cover Letter',
-    futureRole: 'Any Targeted Marketing Application',
+    futureRole: 'Founding a Chinese Language Center',
     connection:
-      'The cover letter process taught me to research companies deeply before reaching out — a skill that directly maps to consumer insight work and competitive analysis in marketing roles. Each letter is a mini-strategy exercise: identify the audience, craft the message, deliver the ask.',
-  },
-  {
-    artifact: 'LinkedIn Profile',
-    futureRole: 'Long-Term Professional Brand Building',
-    connection:
-      'My LinkedIn profile is not just a job-seeking tool — it is the beginning of my professional brand. As I grow in my career, it will document my trajectory, showcase thought leadership, and open doors to mentors, collaborators, and opportunities I have not yet imagined. Treating it seriously now builds the habit of intentional personal branding.',
+      'Writing cover letters is practice for the work itself. Each one asks me to research an organization, identify what its audience values, and argue a case in their language rather than mine — which is exactly what I will need when the business I am marketing is my own language center, and the audience is a parent deciding where to send their child.',
   },
 ];
 
@@ -73,7 +67,7 @@ export default function SOPFutureConnection() {
         </div>
 
         {/* Connection grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {connections?.map((item, i) => (
             <div
               key={item?.artifact}
@@ -90,7 +84,7 @@ export default function SOPFutureConnection() {
 
               <div className="relative z-10">
                 <span className="section-label block mb-4">{item?.artifact}</span>
-                <h3 className="font-display text-lg font-medium italic text-primary-foreground mb-2">
+                <h3 className="font-display text-lg font-medium italic text-primary-foreground mb-2 pr-16">
                   {item?.futureRole}
                 </h3>
                 <div className="w-8 h-px bg-accent mb-4" />
